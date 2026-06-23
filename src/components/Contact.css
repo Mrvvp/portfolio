@@ -169,11 +169,16 @@
 
 /* ── Responsive ── */
 @media (max-width: 860px) {
+  .contact { padding: 3rem 1.5rem; }
   .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
 @media (max-width: 540px) {
-  .contact { padding: 4rem 1.5rem; }
+  .contact { padding: 2.5rem 1.25rem; }
   .form-row { grid-template-columns: 1fr; }
   .contact-form { padding: 1.5rem; }
+  .contact-chips { gap: 0.45rem; }
+  .contact-chip { padding: 0.55rem 0.9rem; }
+  .chip-label { font-size: 0.82rem; }
+  .contact-tagline { font-size: 1.35rem; }
 }

@@ -272,30 +272,53 @@
 
 /* ── Responsive ── */
 @media (max-width: 960px) {
+  .hero { padding: 7rem 2rem 3rem; }
+
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
     text-align: center;
   }
 
   .hero-left { align-items: center; }
-
   .hero-description { max-width: 100%; }
-
   .hero-right { order: -1; }
-
   .hero-visual { width: 280px; height: 280px; }
-
   .hero-name { font-size: 3.8rem; }
 
-  .float-tl { top: 8px;   left: -16px; }
-  .float-tr { top: 16px;  right: -16px; }
+  .ripple-dots-svg {
+    transform: translate(-50%, -50%) scale(0.74) !important;
+  }
+
+  .float-tl { top: 8px;    left: -16px; }
+  .float-tr { top: 16px;   right: -16px; }
   .float-bl { bottom: 16px; left: -16px; }
   .float-br { bottom: 8px;  right: -16px; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .hero { padding: 6rem 1.25rem 2.5rem; }
   .hero-name { font-size: 3rem; }
   .hero-visual { width: 220px; height: 220px; }
-  .hero-float { display: none; }
+  .hero-stack { justify-content: center; }
+  .hero-badge { font-size: 0.72rem; }
+
+  /* Scale SVG dot rings to match smaller image */
+  .ripple-dots-svg {
+    transform: translate(-50%, -50%) scale(0.58) !important;
+  }
+
+  /* Keep floating chips visible but smaller */
+  .hero-float {
+    padding: 0.38rem 0.6rem;
+    border-radius: 9px;
+    gap: 0.35rem;
+  }
+  .float-text { font-size: 0.68rem; }
+  .float-emoji { font-size: 0.9rem; }
+
+  .float-tl { top: 4px;    left: -10px; }
+  .float-tr { top: 12px;   right: -10px; }
+  .float-bl { bottom: 12px; left: -10px; }
+  .float-br { bottom: 4px;  right: -10px; }
 }

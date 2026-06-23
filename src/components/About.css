@@ -4,6 +4,16 @@
   padding: 4rem 4rem;
 }
 
+@media (max-width: 768px) {
+  .about { padding: 3rem 1.5rem; }
+  .about-links { gap: 0.5rem; }
+  .about-link-pill { font-size: 0.82rem; padding: 0.5rem 1rem; }
+}
+
+@media (max-width: 480px) {
+  .about { padding: 2.5rem 1.25rem; }
+}
+
 .about-text {
   display: flex;
   flex-direction: column;

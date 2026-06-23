@@ -86,6 +86,7 @@ const Hero = () => {
           <div className="hero-visual">
             <svg
               aria-hidden="true"
+              className="ripple-dots-svg"
               style={{
                 position: 'absolute',
                 width: 700,
