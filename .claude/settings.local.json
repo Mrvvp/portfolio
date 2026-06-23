@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "WebFetch(domain:marvan-81375.web.app)",
+      "Bash(curl -s \"https://marvan-81375.web.app/\")",
+      "Bash(curl -s \"https://marvan-81375.web.app/flutter_bootstrap.js\")",
+      "Bash(curl -s \"https://marvan-81375.web.app/main.dart.js\" -o /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[^\"]\\\\{5,80\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[^\"]\\\\{3,200\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -iE '\\(\\\\+[0-9]|[0-9]{10}|marvan|hello|hi,|passionate|build|develop|experience|year|specializ|born|live|based|currently|work\\)')",
+      "Bash(grep -o '\"[^\"]\\\\{10,300\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[^\"]\\\\{20,400\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[^\"]\\\\{5,200\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[^\"]\\\\{15,400\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[^\"]\\\\{3,30\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -iE '^\"\\(Flutter|Dart|Firebase|Node\\\\.js|MongoDB|React|JavaScript|Python|Git|Postman|Google Cloud|REST API|GetX|Provider|Riverpod|Hive|SQL|MySQL|PostgreSQL|Swift|Kotlin|Android|iOS|HTML|CSS|Tailwind|Express|Nest|Docker|AWS|Azure|GCP|Figma|Adobe|UI/UX|Clean Architecture|BLoC|MVC|MVVM|SOLID\\)\"$')",
+      "Bash(grep -o '\"[A-Za-z][A-Za-z0-9 /\\\\.+#_-]\\\\{2,25\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(grep -o '\"[A-Za-z][A-Za-z0-9 /\\\\.+#_\\\\\\(\\\\\\)-]\\\\{3,40\\\\}\"' /private/tmp/claude-502/-Users-marvan-development-portfolio/d8a5fcd5-dc15-4280-8450-55478d32ef9e/scratchpad/main.dart.js)",
+      "Bash(npm install *)"
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+.projects {
+  max-width: none;
+  padding: 4rem 0;
+}
+
+.projects-header {
+  max-width: none;
+  margin: 0;
+  padding: 0 4rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ── Marquee ── */
+.proj-marquee-wrap {
+  position: relative;
+}
+
+.proj-marquee {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 1rem 0 2rem;
+}
+
+.proj-marquee::-webkit-scrollbar {
+  display: none;
+}
+
+.proj-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  padding: 0 2rem 0 4rem;
+}
+
+/* ── Scroll buttons — float over cards, no layout space ── */
+.proj-scroll-btn {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.10);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-heading);
+  font-size: 0.78rem;
+  transition: all 0.22s;
+  transform: translateY(-110%);
+}
+
+.proj-scroll-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.proj-scroll-btn.left  { right: 7rem; }
+.proj-scroll-btn.right { right: 4rem; }
+
+/* ── Card ── */
+.proj-card {
+  width: 300px;
+  flex-shrink: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.proj-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Image area ── */
+.proj-image-wrap {
+  width: 100%;
+  height: 533px;
+  overflow: hidden;
+  background: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.proj-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.proj-image-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Body ── */
+.proj-body {
+  padding: 1.2rem 1.4rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.proj-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.proj-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+}
+
+.proj-subtitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.proj-desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.proj-desc.expanded {
+  display: block;
+  overflow: visible;
+}
+
+.proj-read-more {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--primary);
+  cursor: pointer;
+  text-align: left;
+  transition: opacity 0.2s;
+}
+
+.proj-read-more:hover {
+  opacity: 0.7;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.proj-tag {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 99px;
+  padding: 0.18rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.proj-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.1rem;
+}
+
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  text-decoration: none;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.proj-link:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
